@@ -1,0 +1,141 @@
+body {
+    background-color: #f3eae3;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 40%;
+    max-width: 1024px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.left {
+    background-color: black;
+    background-image: url("imgPerfume.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 15px 0 0 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+span {
+    line-height: 2em;
+}
+
+.right {
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 15px 15px 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+h1 {
+    font-size: 1.75em;
+    font-family: 'Merriweather', serif;
+}
+h4 {
+    font-size: 1em;
+    font-family: 'Merriweather', serif;
+}
+
+.preco {
+    display: flex;
+    justify-content: space-around;
+}
+
+.preco div h1 {
+    font-size: 2em;
+    color: #3d8168;
+
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #3d8168;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 1280px){
+    .container {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1024px){
+    .container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px){
+    .container {
+        width: 90%;
+        height: 90%;
+        grid-template-columns: 100%;
+        grid-template-rows: 45% 55%;
+    }
+    .left {
+        border-radius: 15px 15px 0 0;
+    }    
+    .right {
+        border-radius: 0 0 15px 15px;
+    }
+    .preco div h1 {
+        font-size: 3em;
+        color: #3d8168;
+        margin: 0.3em;
+    }
+}
+
+@media (max-width: 554px){
+    .container {
+        width: 90%;
+        height: 90%;
+    }
+
+    .container p {
+        margin: 0;
+    }
+    button {
+        margin-top: 7px;
+        padding: 15px 30px;
+    }
+}
+
+@media (max-width: 375px){
+    .container {
+        width: 95%;
+        height: 95%;
+        grid-template-columns: 100%;
+        grid-template-rows: 45% 55%;
+    }
+    .left {
+        border-radius: 15px 15px 0 0;
+    }    
+    .right {
+        border-radius: 0 0 15px 15px;
+    }
+    .preco div h1 {
+        font-size: 2.2em;
+    }
+
+    .container p {
+        margin: 0;
+    }
+    button {
+        margin-top: 7px;
+        padding: 15px 30px;
+    }
+}
